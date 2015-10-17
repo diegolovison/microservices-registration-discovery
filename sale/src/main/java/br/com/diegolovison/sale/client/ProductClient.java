@@ -10,9 +10,9 @@ import java.util.List;
 /**
  * Created by diego.lovison on 02/10/2015.
  */
+// TODO http://stackoverflow.com/questions/29284911/can-a-spring-cloud-feign-client-share-interface-with-an-spring-web-controller
 @FeignClient("product-service")
 @RequestMapping(value = "/product")
-// TODO http://stackoverflow.com/questions/29284911/can-a-spring-cloud-feign-client-share-interface-with-an-spring-web-controller
 public interface ProductClient {
 
     @RequestMapping(method = RequestMethod.GET)
