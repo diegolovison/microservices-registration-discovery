@@ -24,3 +24,8 @@ zuul:
       path: /oauth/**
       serviceId: oauth-service
       stripPrefix: false
+
+spring:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:7777/user
