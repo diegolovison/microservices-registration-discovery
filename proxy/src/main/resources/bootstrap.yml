@@ -1,4 +1,4 @@
 # Spring properties
 spring:
   application:
-     name: proxy
+     name: proxy-service
