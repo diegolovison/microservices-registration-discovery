@@ -1,3 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+server:
+  port: 5555
+
 zuul:
   routes:
     customer:
@@ -12,11 +20,7 @@ zuul:
       path: /sale/**
       serviceId: sale-service
       stripPrefix: false
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
-
-server:
-  port: 5555
+    oauth:
+      path: /oauth/**
+      serviceId: oauth-service
+      stripPrefix: false
