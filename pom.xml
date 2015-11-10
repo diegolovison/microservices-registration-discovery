@@ -26,6 +26,7 @@
         <module>product</module>
         <module>sale</module>
         <module>proxy</module>
+        <module>oauth</module>
     </modules>
 
     <dependencyManagement>
@@ -41,6 +42,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-netflix</artifactId>
                 <version>${spring.cloud.netflix}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-security</artifactId>
+                <version>1.0.2.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
